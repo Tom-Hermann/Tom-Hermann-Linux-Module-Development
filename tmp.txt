@@ -1,0 +1,1 @@
+qemu-system-x86_64 -enable-kvm -m 512 -hda alpine_kernel_dev.qcow2 -serial mon:stdio -display none -netdev user,hostfwd=tcp::2222-:22,id=n0 -device e1000,netdev=n0
